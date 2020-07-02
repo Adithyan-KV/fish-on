@@ -11,6 +11,12 @@ body{
 /*    background-image: url(images/background_img2.png)*/
 }
 
+img{
+    max-width: 100%;
+    max-height: auto;
+    overflow: hidden;
+}
+
 .top-bar{
     height:10%;
     width:100%;
@@ -64,4 +70,25 @@ body{
     font-size: 100px;
     z-index: 100;
     text-shadow: 10px 10px 20px #000000;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .hero_text{
+        font-size:48px;
+    }
+    
+    .button{
+        font-size:16px;
+    }
+    
+    .button:hover{
+        font-size: 18px;
+    }
+    
+    img{
+        max-width: 200%;
+        transform: translate(-25%,25%);
+    }
+
 }
