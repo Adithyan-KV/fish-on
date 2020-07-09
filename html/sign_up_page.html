@@ -21,33 +21,64 @@
                 Join
             </div>
         </div>
-        <div class="darken">
-        <div class="container">
-            <div class="box">
-              <h1>Sign up</h1>
-              <form>
-                <div class="inputbox">
-                  <input type="text" name="uname" required>
-                  <label for="uname">Username</label>
-                </div>
-                <div class="inputbox">
-                  <input type="email" name="email" required>
-                  <label for="email">Email ID</label>
-                </div>
-                <div class="inputbox">
-                  <input type="password" name="pw" required>
-                  <label for="pw">Password</label>
-                </div>
-                <div class="inputbox">
-                  <input type="password" name="cpw" required>
-                  <label for="cpw">Confirm password</label>
-                </div>
-                <input type="submit" name="submit" value="Sign up">
-              </form>
+        <div class="box">
+          <h1>Sign up</h1>
+          <form>
+            <div class="inputbox">
+              <input type="text" name="uname" required>
+              <label for="uname">Username</label>
             </div>
+            <div class="inputbox">
+              <input type="email" name="email" required>
+              <label for="email">Email ID</label>
+            </div>
+            <div class="inputbox">
+              <input type="password" name="pw" required>
+              <label for="pw">Password</label>
+            </div>
+            <div class="inputbox">
+              <input type="password" name="cpw" required>
+              <label for="cpw">Confirm password</label>
+            </div>
+            <input type="submit" name="submit" value="Sign up">
+          </form>
         </div>
+        <div class="container">
+          <ul id="scene">
+              <li class="layer" data-depth="0.04" >
+                  <img src="../images/card_09.png">
+              </li>
+              <li class="layer" data-depth="0.04" >
+                  <img src="../images/card_08.png">
+              </li>
+              <li class="layer" data-depth="0.06" >
+                  <img src="../images/card_07.png">
+              </li>
+              <li class="layer" data-depth="0.08" >
+                  <img src="../images/card_06.png">
+              </li>
+              <li class="layer" data-depth="0.1" >
+                  <img src="../images/card_05.png">
+              </li>
+              <li class="layer" data-depth="0.15" >
+                  <img src="../images/card_04.png">
+              </li>
+              <li class="layer" data-depth="0.2" >
+                  <img src="../images/card_03.png">
+              </li>
+              <li class="layer" data-depth="0.3">
+                  <img src="../images/card_02.png">
+              </li>
+              <li class="layer" data-depth="0.5" >
+                  <img src="../images/card_01.png">
+              </li>
+          </ul>
         </div>
 
+        <script>
+            var scene= document.getElementById("scene");
+            var parallax = new Parallax(scene);
+        </script>
     </body>
 
 </html>
