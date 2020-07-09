@@ -11,6 +11,7 @@ body{
 }
 
 
+
 img{
     max-width: 100%;
     max-height: auto;
@@ -61,21 +62,23 @@ img{
 }
 
 .box{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Audrey', sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    width: 300px;
+    height: 450px;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     box-sizing: border-box;
-    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+    box-shadow: 2px 2px 25px rgba(255, 255, 255, .2);
     z-index: 100
 }
 
 .box h1{
+  font-family: 'Roboto Slab', serif;
   margin: 0 0 30px;
   padding: 0;
   text-align: center;
@@ -102,8 +105,8 @@ img{
   position: absolute;
   top: 0;
   left: 0;
-  padding: 12px 0;
-  font-size: 12px;
+  padding: 17px 0;
+  font-size: 11px;
   color: black;
   pointer-events: none;
   transition: 0.3s;
@@ -113,7 +116,7 @@ img{
 .box .inputbox input:valid ~ label{
   top: -27px;
   left: 0px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
 }
 
