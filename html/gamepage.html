@@ -1,0 +1,62 @@
+<DOCTYPE!>
+
+<html>
+    <head>
+        <title>Game - FISH ON</title>
+        <link rel="stylesheet" href="../styles/gamepage.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+
+        <div class="heading">
+            Host's game
+        </div>
+        <div class="container">
+            <div class="gamecircle" id="gamecircle">
+                <div class="playerbox player1">
+                    player 11
+                </div>
+                <div class="playerbox player2">
+                    player 21
+                </div>
+                <div class="playerbox player3">
+                    player 12
+                </div>
+                <div class="playerbox player4">
+                    player 22
+                </div>
+                <div class="playerbox player5">
+                    player 13
+                </div>
+                <div class="playerbox player6">
+                    player 23
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+            function gamecircle(){
+
+                var gamecircle = document.getElementById("gamecircle");
+                var height = gamecircle.parentElement.clientHeight;
+                var width = gamecircle.parentElement.clientWidth;
+
+
+                if (height < width) {
+                    gamecircle.style.height = String(height*0.85)+"px";
+                    gamecircle.style.width = gamecircle.style.height;
+                } else {
+                    gamecircle.style.width = String(width*0.85)+"px";
+                    gamecircle.style.height = gamecircle.style.width;
+                }
+            }
+            gamecircle()
+            window.addEventListener('resize', gamecircle);
+
+        </script>
+    </body>
+
+</html>

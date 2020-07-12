@@ -1,0 +1,65 @@
+body{
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+}
+
+.container{
+    height:90%;
+    width:100%;
+    background-color:black;
+}
+
+.heading{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.gamecircle{
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.playerbox{
+    height: 15%;
+    width: 20%;
+    color: black;
+    background-color: grey;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}.player1{
+    transform: translate(-50%, -375%);
+}
+
+.player2{
+    transform: translate(175%, -200%);
+}
+
+.player3{
+    transform: translate(175%, 100%);
+}
+
+.player4{
+    transform: translate(-50%, 275%);
+}
+
+.player5{
+    transform: translate(-275%, 100%);
+}
+
+.player6{
+    transform: translate(-275%, -200%);
+}
