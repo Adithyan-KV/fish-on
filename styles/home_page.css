@@ -1,0 +1,25 @@
+.hero_text{
+    margin-top:50vh;
+    margin-left:50vw;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    color:white;
+    font-family: 'Francois One',sans-serif;
+    font-size: 100px;
+    z-index: 100;
+    text-shadow: 10px 10px 20px #000000;
+}
+
+/* for 1440p or similar resolution monitors*/
+@media only screen and (min-width: 2000px){
+    .hero_text{
+            font-size:7em;
+    }
+}
+
+/* for 4k or similar resolution monitors*/
+@media only screen and (min-width: 3000px){
+    .hero_text{
+            font-size:10em;
+    }
+}

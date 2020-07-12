@@ -1,97 +1,6 @@
-body{
-    margin:0px;
-    padding:0px;
-}
-
-.container{
-    height:100%;
-    width:100%;
-    overflow: hidden;
-    background-color:black;
-}
-
-
-
-img{
-    max-width: 100%;
-    max-height: auto;
-    overflow: hidden;
-}
-
-.top-bar{
-    height:10%;
-    width:100%;
-    position:fixed;
-/*    background-color:green;*/
-    display:flex;
-}
-
 @font-face{
     font-family: 'Password Mask';
     src: url('../fonts/password-font.ttf')
-}
-
-.button{
-    box-sizing: border-box;
-    height: 100%;
-    width : 7%;
-    text-align: center;
-/*    background-color: red;*/
-    color:#484854;
-    margin: 0px 10px;
-    padding-top: 1.5%;
-    font-size: 30px;
-    font-family: 'Saira Extra Condensed',sans-serif;
-}
-
-.button:after{
-    position:absolute;
-    content:'';
-    height:0;
-    width:0;
-    border-bottom: 8px solid white;
-    bottom:0;
-    left:0;
-    box-sizing: border-box;
-}
-
-.button:hover :after{
-    height:100%;
-    width:100%;
-    border-bottom: 8px solid white;
-    transition: width 2s linear, height 2s linear;
-}
-
-.button:hover,.currentb{
-    color:white;
-    font-size: 32px;
-    cursor: pointer;
-}
-
-.leftbutton{
-    text-align: center;
-    box-sizing: border-box;
-    color: rgba(230,230,230,1);
-    background-color: #1a1a1a;
-    position: absolute;
-    right:0;
-    width: min-content;
-    border-radius: 10px;
-    background-clip: padding-box;
-    height: min-content;
-    margin: 10px 10px;
-    padding: none;
-    padding-bottom: 3px;
-    font-size: 30px;
-    font-family: 'Saira Extra Condensed',sans-serif;
-}
-
-.leftbutton:hover, .currentlb{
-    font-size: 30px;
-    cursor: pointer;
-    background-color: rgba(205,204,218,0.9);
-    color: black;
-
 }
 
 .box{
@@ -131,7 +40,7 @@ img{
   width: 100%;
   padding: 10px 0;
   font-size: 13px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   border-bottom: 1px solid black;
   outline: none;
@@ -196,25 +105,4 @@ input[type="password"]{
     font-size: 11px;
     color: black;
     margin-top: 30px;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .hero_text{
-        font-size:48px;
-    }
-
-    .button{
-        font-size:16px;
-    }
-
-    .button:hover{
-        font-size: 18px;
-    }
-
-    img{
-        max-width: 200%;
-        transform: translate(-25%,25%);
-    }
-
 }

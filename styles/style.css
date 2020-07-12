@@ -63,42 +63,33 @@ img{
 }
 
 .leftbutton{
+    display:block;
     text-align: center;
     box-sizing: border-box;
-    color: rgba(230,230,230,1);
-    background-color: #1a1a1a;
+    color: white;
+    background-color: black;
     position: absolute;
     right:0;
     width: min-content;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: 1px solid white;
     background-clip: padding-box;
     height: min-content;
-    margin: 10px 10px;
-    padding: none;
-    padding-bottom: 3px;
-    font-size: 30px;
-    font-family: 'Saira Extra Condensed',sans-serif;
+    margin: 1.3em;
+    padding: 0.1em 0.3em 0.1em 0.3em;
+    font-size: 1.3em;
+    font-family: 'Helvetica',sans-serif;
 }
 
 .leftbutton:hover, .currentlb{
-    font-size: 30px;
     cursor: pointer;
-    background-color: rgba(205,204,218,0.9);
+    background-color: white;
     color: black;
 
 }
-.hero_text{
-    margin-top:50vh;
-    margin-left:50vw;
-    transform: translate(-50%,-50%);
-    position: fixed;
-    color:white;
-    font-family: 'Francois One',sans-serif;
-    font-size: 100px;
-    z-index: 100;
-    text-shadow: 10px 10px 20px #000000;
-}
 
+
+/*for mobile resolutions*/
 @media only screen and (max-width: 600px) {
 
     .hero_text{
@@ -117,5 +108,53 @@ img{
         max-width: 200%;
         transform: translate(-25%,25%);
     }
+
+}
+
+/* for 1440p or similar resolution monitors*/
+@media only screen and (min-width: 2000px){
+  img{
+      width:100vw;
+      max-width: none;
+      max-height: none;
+      overflow: hidden;
+  }
+
+  .hero_text{
+    font-size:150px;
+  }
+
+  .button{
+      font-size:50px;
+  }
+
+  .button:hover{
+      font-size: 60px;
+  }
+
+
+}
+
+/* for 4k or similar resolution monitors*/
+@media only screen and (min-width: 3000px){
+  img{
+      width:100vw;
+      max-width: none;
+      max-height: none;
+      overflow: hidden;
+  }
+
+  .hero_text{
+    font-size:250px;
+  }
+
+  .button{
+      font-size:90px;
+  }
+
+  .button:hover{
+      font-size: 100px;
+  }
+
 
 }

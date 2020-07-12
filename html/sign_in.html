@@ -1,86 +1,94 @@
 <DOCTYPE!>
 
 <html>
-    <head>
-        <title>Fish on - Sign up</title>
-        <link rel="stylesheet" type="text/css" href="../styles/sign_up.css">
-        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Fredoka+One&family=Saira+Extra+Condensed:wght@500&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    </head>
+	<head>
+		<title>Fish on - Sign up</title>
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+		<link rel="stylesheet" type="text/css" href="../styles/sign_in.css">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Fredoka+One&family=Saira+Extra+Condensed:wght@500&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	</head>
 
-    <body>
-        <div class = "top-bar">
-            <div class = "button" onclick="location.href='index.html';">
-                Home
-            </div>
-            <div class = "button">
-                Host
-            </div>
-            <div class = "button">
-                Join
-            </div>
-            <div class="leftbutton" onclick="location.href='sign_up.html';">
-                   &nbsp&nbspSign&nbspUp&nbsp&nbsp
-            </div>
-            <div class="leftbutton  currentlb" style="right:95px;">
-                   &nbsp&nbspSign&nbspIn&nbsp&nbsp
-            </div>
+	<body>
+		<div class = "top-bar">
+			<div class = "button" onclick="location.href='index.html';">
+				Home
+			</div>
+			<div class = "button">
+				Host
+			</div>
+			<div class = "button">
+				Join
+			</div>
+			<div class="leftbutton" onclick="location.href='sign_up.html';">
+				   &nbsp&nbspSign&nbspUp&nbsp&nbsp
+			</div>
+			<div class="leftbutton  currentlb" style="right:95px;">
+				   &nbsp&nbspSign&nbspIn&nbsp&nbsp
+			</div>
 
-        </div>
-        <div class="box box2">
-          <h1>Sign in</h1>
-          <form>
-            <div class="inputbox">
-              <input type="text" name="uname" required>
-              <label for="uname">Username</label>
-            </div>
-            <div class="inputbox">
-              <input type="password" name="pw" required>
-              <label for="pw">Password</label>
-            </div>
-            <input type="submit" name="submit" value=" Sign in ">
-          </form>
-          <div class="link">
-              <a href="sign_up.html">Don't have an account?  Sign up</a>
-          </div>
-        </div>
-        <div class="container">
-          <ul id="scene">
-              <li class="layer" data-depth="0.04" >
-                  <img src="../images/card_09.png">
-              </li>
-              <li class="layer" data-depth="0.04" >
-                  <img src="../images/card_08.png">
-              </li>
-              <li class="layer" data-depth="0.06" >
-                  <img src="../images/card_07.png">
-              </li>
-              <li class="layer" data-depth="0.08" >
-                  <img src="../images/card_06.png">
-              </li>
-              <li class="layer" data-depth="0.1" >
-                  <img src="../images/card_05.png">
-              </li>
-              <li class="layer" data-depth="0.15" >
-                  <img src="../images/card_04.png">
-              </li>
-              <li class="layer" data-depth="0.2" >
-                  <img src="../images/card_03.png">
-              </li>
-              <li class="layer" data-depth="0.3">
-                  <img src="../images/card_02.png">
-              </li>
-              <li class="layer" data-depth="0.5" >
-                  <img src="../images/card_01.png">
-              </li>
-          </ul>
-        </div>
+		</div>
+	<div class="signin_container">
+		<div class="signin_image">
 
-        <script>
-            var scene= document.getElementById("scene");
-            var parallax = new Parallax(scene);
-        </script>
-    </body>
+		</div>
+		<div class="box box2">
+			<h1>Sign in</h1>
+				<form>
+				<div class="inputbox">
+				<input type="text" name="uname" required>
+				<label for="uname">Username</label>
+				</div>
+				<div class="inputbox">
+				<input type="password" name="pw" required>
+				<label for="pw">Password</label>
+				</div>
+				<input type="submit" name="submit" value=" Sign in ">
+				</form>
+
+				<div class="link">
+				<a href="sign_up.html">Don't have an account?  Sign up</a>
+				</div>
+		</div>
+	</div>
+
+		<div class="container">
+		  <ul id="scene">
+			  <li class="layer" data-depth="0.04" >
+				  <img src="../images/card_09.png">
+			  </li>
+			  <li class="layer" data-depth="0.04" >
+				  <img src="../images/card_08.png">
+			  </li>
+			  <li class="layer" data-depth="0.06" >
+				  <img src="../images/card_07.png">
+			  </li>
+			  <li class="layer" data-depth="0.08" >
+				  <img src="../images/card_06.png">
+			  </li>
+			  <li class="layer" data-depth="0.1" >
+				  <img src="../images/card_05.png">
+			  </li>
+			  <li class="layer" data-depth="0.15" >
+				  <img src="../images/card_04.png">
+			  </li>
+			  <li class="layer" data-depth="0.2" >
+				  <img src="../images/card_03.png">
+			  </li>
+			  <li class="layer" data-depth="0.3">
+				  <img src="../images/card_02.png">
+			  </li>
+			  <li class="layer" data-depth="0.5" >
+				  <img src="../images/card_01.png">
+			  </li>
+		  </ul>
+		</div>
+
+		<script>
+			var scene= document.getElementById("scene");
+			var parallax = new Parallax(scene);
+		</script>
+	</body>
 
 </html>
