@@ -62,7 +62,31 @@ img{
     cursor: pointer;
 }
 
+.leftbutton{
+    text-align: center;
+    box-sizing: border-box;
+    color: rgba(230,230,230,1);
+    background-color: #1a1a1a;
+    position: absolute;
+    right:0;
+    width: min-content;
+    border-radius: 10px;
+    background-clip: padding-box;
+    height: min-content;
+    margin: 10px 10px;
+    padding: none;
+    padding-bottom: 3px;
+    font-size: 30px;
+    font-family: 'Saira Extra Condensed',sans-serif;
+}
 
+.leftbutton:hover, .currentlb{
+    font-size: 30px;
+    cursor: pointer;
+    background-color: rgba(205,204,218,0.9);
+    color: black;
+
+}
 .hero_text{
     margin-top:50vh;
     margin-left:50vw;
