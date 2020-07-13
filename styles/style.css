@@ -88,6 +88,9 @@ img{
 
 }
 
+.leftbutton2{
+    right: 120px;
+}
 
 /*for mobile resolutions*/
 @media only screen and (max-width: 600px) {
