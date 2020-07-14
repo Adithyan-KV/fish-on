@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Consolas';
+    src: url('../fonts/Consolas.ttf')
+}
+
 body{
     margin:0px;
     padding:0px;
@@ -31,8 +36,9 @@ body{
 }
 
 .playerbox{
-    height: 25%;
-    width: 40%;
+    box-sizing: border-box;
+    height: 20%;
+    width: 35%;
     color: black;
     background-color: transparent;
     border-radius: 10px;
@@ -99,5 +105,47 @@ body{
 }
 
 img{
+    box-sizing: border-box;
     height: 100%;
+}
+
+.statbox{
+    box-sizing: border-box;
+    border-radius: 15px;
+    border:  2px dotted grey;
+    width: 20%;
+    height: 12%;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    font-family: "Consolas", sans-serif;
+    font-size: 0.8em;
+    color: grey;
+    padding: 1%;
+}
+
+.declbox{
+    box-sizing: border-box;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    bottom: 5%;
+    left: 3%;
+    border-radius: 15px;
+    border: 2px dotted grey;
+    font-family: "Consolas", sans-serif;
+    color: grey;
+}
+
+.declboxh{
+    font-size: 1.2em;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    border-bottom: 2px dotted grey;
+}
+
+.declteams{
+    padding: 0.5em;
 }
