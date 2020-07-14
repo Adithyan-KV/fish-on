@@ -20,7 +20,7 @@ body{
 }
 
 .gamecircle{
-    background-color: white;
+    background-color: transparent;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,35 +31,73 @@ body{
 }
 
 .playerbox{
-    height: 15%;
-    width: 20%;
+    height: 25%;
+    width: 40%;
     color: black;
-    background-color: grey;
+    background-color: transparent;
     border-radius: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
 
 }.player1{
-    transform: translate(-50%, -375%);
+    transform: translate(-50%, -250%);
 }
 
 .player2{
-    transform: translate(175%, -200%);
+    transform: translate(75%, -175%);
 }
 
 .player3{
-    transform: translate(175%, 100%);
+    transform: translate(75%, -25%);
 }
 
 .player4{
-    transform: translate(-50%, 275%);
+    width: 60%;
+    height: 38%;
+    transform: translate(-50%, 50%);
 }
 
 .player5{
-    transform: translate(-275%, 100%);
+    transform: translate(-175%, -25%);
 }
 
 .player6{
-    transform: translate(-275%, -200%);
+    transform: translate(-175%, -175%);
+}
+
+.playerboxh{
+    width: 100%;
+    height: 20%;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+}
+
+.cardbox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+
+}
+
+.cardWrapper{
+        box-sizing: border-box;
+        max-height: 100%;
+        overflow: hidden;
+}
+
+.lastcard{
+    overflow: visible;
+}
+
+img{
+    height: 100%;
 }
