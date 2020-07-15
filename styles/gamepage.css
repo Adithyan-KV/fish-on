@@ -29,7 +29,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -44%);
+    transform: translate(-50%, -52%);
     border-radius: 50%;
     width: 500px;
     height: 500px;
@@ -55,7 +55,7 @@ body{
 }
 
 .player3{
-    transform: translate(75%, -25%);
+    transform: translate(75%, -20%);
 }
 
 .player4{
@@ -65,7 +65,7 @@ body{
 }
 
 .player5{
-    transform: translate(-175%, -25%);
+    transform: translate(-175%, -20%);
 }
 
 .player6{
@@ -74,7 +74,7 @@ body{
 
 .playerboxh{
     width: 100%;
-    height: 20%;
+    height: 25%;
     background-color: transparent;
     text-align: center;
     color: white;
@@ -87,7 +87,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 90%;
-    width: 100%;
+    max-width: 100%;
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -97,7 +97,13 @@ body{
 .cardWrapper{
         box-sizing: border-box;
         max-height: 100%;
+        max-width: 6%;
         overflow: hidden;
+        background-color: white;
+}
+
+.firstcard{
+    background-color: transparent;
 }
 
 .lastcard{
