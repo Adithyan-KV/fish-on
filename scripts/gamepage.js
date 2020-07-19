@@ -67,7 +67,7 @@ function update(json){
         }
     }
 
-    if (mycards_new != []){
+    if (mycards_new.length != 0){
         mycardbox.getElementsByClassName("cardWrapper")[0].classList.add("firstcard");
         mycardbox.getElementsByClassName("cardWrapper")[mycardbox.getElementsByClassName("cardWrapper").length - 1].classList.add("lastcard");
     }
