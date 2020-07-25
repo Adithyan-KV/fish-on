@@ -74,3 +74,7 @@ function update(json){
 
     return [mycards_old, mycards_new];
 }
+
+function ask() {
+    document.getElementsByClassName("askbox")[0].style.display = "block";
+}
