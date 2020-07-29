@@ -4,7 +4,10 @@
     <head>
         <title>Game - FISH ON</title>
         <link rel="stylesheet" href="../styles/gamepage.css">
+        <link rel="stylesheet" href="../styles/cardsprite.css">
+        <script type="text/javascript" src="../scripts/gamepage.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -14,12 +17,12 @@
         </div>
         <div class="container">
             <div class="gamecircle" id="gamecircle">
-                <div class="playerbox player1">
+                <div class="playerbox player4">
                     <div class="playerboxh">
                         player11
                     </div>
                     <div class="cardbox">
-                        <div class="cardWrapper">
+                        <div class="cardWrapper firstcard">
                             <img src="../images/gray_back.png" alt=" " class="card">
                         </div>
                         <div class="cardWrapper">
@@ -61,11 +64,81 @@
                         </div>
                     </div>
                 </div>
-                <div class="playerbox player2">
+                <div class="playerbox player5">
                     <div class="playerboxh">
                         player21
                     </div>
                     <div class="cardbox">
+                        <div class="cardWrapper firstcard">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper lastcard">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                    </div>
+                </div>
+                <div class="playerbox player6">
+                    <div class="playerboxh">
+                        player12
+                    </div>
+                    <div class="cardbox">
+                        <div class="cardWrapper firstcard">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper lastcard">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                    </div>
+                </div>
+                <div class="playerbox player1">
+                    <div class="playerboxh">
+                        player22
+                    </div>
+                    <div class="cardbox">
+                        <div class="cardWrapper firstcard" id="33">
+                            <img src="../images/cards/33.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper" id="46">
+                            <img src="../images/cards/46.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper" id="25">
+                            <img src="../images/cards/25.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper" id="96">
+                            <img src="../images/cards/96.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper lastcard" id="45">
+                            <div class="cardh">
+                                <div class="cards card-45">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="playerbox player2">
+                    <div class="playerboxh">
+                        player13
+                    </div>
+                    <div class="cardbox">
+                        <div class="cardWrapper firstcard">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
+                        <div class="cardWrapper">
+                            <img src="../images/gray_back.png" alt=" " class="card">
+                        </div>
                         <div class="cardWrapper">
                             <img src="../images/gray_back.png" alt=" " class="card">
                         </div>
@@ -85,78 +158,20 @@
                 </div>
                 <div class="playerbox player3">
                     <div class="playerboxh">
-                        player12
-                    </div>
-                    <div class="cardbox">
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper lastcard">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                    </div>
-                </div>
-                <div class="playerbox player4">
-                    <div class="playerboxh">
-                        player22
-                    </div>
-                    <div class="cardbox">
-                        <div class="cardWrapper">
-                            <img src="../images/cards/2C.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/cards/4D.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/cards/KH.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/cards/QD.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper lastcard">
-                            <img src="../images/cards/7S.png" alt=" " class="card">
-                        </div>
-                    </div>
-                </div>
-                <div class="playerbox player5">
-                    <div class="playerboxh">
-                        player13
-                    </div>
-                    <div class="cardbox">
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                        <div class="cardWrapper lastcard">
-                            <img src="../images/gray_back.png" alt=" " class="card">
-                        </div>
-                    </div>
-                </div>
-                <div class="playerbox player6">
-                    <div class="playerboxh">
                         player23
                     </div>
                     <div class="cardbox">
-                        <div class="cardWrapper lastcard">
+                        <div class="cardWrapper lastcard firstcard">
                             <img src="../images/gray_back.png" alt=" " class="card">
                         </div>
+                    </div>
+                </div>
+                <div class="askbox">
+                    <div class="askboxh">
+                        Ask
+                    </div>
+                    <div class="formbox">
+
                     </div>
                 </div>
             </div>
@@ -164,11 +179,11 @@
                 Connection status : <br><br>
                 Last updated : <br><br>
             </div>
-            <div class="declbox">
-                <div class="declboxh">
+            <div class="scorebox">
+                <div class="scoreboxh">
                     Declarations
                 </div>
-                <div class="declteams">
+                <div class="scoreteams">
                     Team 1<br>
                     <ol>
                         <li>Suit 1</li>
@@ -184,6 +199,12 @@
                         <li>Suit 4</li>
                     </ol>
                 </div>
+            </div>
+            <div class="declbutton">
+                Declare
+            </div>
+            <div class="askbutton">
+                Ask
             </div>
         </div>
 
@@ -208,6 +229,8 @@
             gamecircle()
             window.addEventListener('resize', gamecircle);
 
+            var askbutton = document.getElementsByClassName("askbutton")[0];
+            askbutton.addEventListener("click", ask)
         </script>
     </body>
 
