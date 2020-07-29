@@ -31,10 +31,32 @@
         </div>
         <div class="box">
           <h1>Host game</h1>
+          <p>
+              Enter the game name. This name will be displayed in the lobby for other players to see.
+          </p>
           <form>
             <div class="inputbox">
               <input type="text" name="uname" required>
               <label for="uname">Game name</label>
+            </div>
+            <p>
+                Select the type of lobby. If you choose public,your game will be displayed publicly in the lobby and will be open for any other players to join.
+            </p>
+            <div class='radio'>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Public</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Private</label><br>
+            </div>
+
+            <p>
+                Select the number of players
+            </p>
+            <div class='radio'>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">6</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">8</label><br>
             </div>
             <!-- <div class="inputbox">
               <input type="text" name="email" required>
@@ -50,9 +72,9 @@
             </div>
             <input type="submit" name="submit" value="Sign up"> -->
           </form>
-          <div class="link"  style="margin-top:0;">
-              <a href="sign_in.html">Already have an account?  Sign in</a>
-          </div>
+          <button>
+              Join
+          </button>
         </div>
         <div class="container">
           <ul id="scene">
