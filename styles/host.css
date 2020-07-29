@@ -1,0 +1,107 @@
+@font-face{
+    font-family: 'Password Mask';
+    src: url('../fonts/password-font.ttf')
+}
+
+.box{
+    font-family: 'Audrey', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 70%;
+    padding: 50px;
+    background-color: rgba(205,204,218,0.96);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 25px rgba(255, 255, 255, .2);
+    z-index: 100
+}
+
+.box2{
+    width: 280px;
+    height: 400px;
+}
+
+.box h1{
+  font-family: 'Helvetica', sans-serif;
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.box .inputbox{
+  position: relative;
+}
+
+.box .inputbox input{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 13px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputbox label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 17px 0;
+  font-size: 11px;
+  color: black;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label{
+  top: -27px;
+  left: 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.box input[type="submit"]{
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.8);;
+  height: 30px;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+  font-size: 18px;
+  font-weight: bold
+}
+
+.box input[type="submit"]:hover{
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #33333C ;
+  color: white;
+}
+
+.box input[type="submit"]:active{
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #33333C ;
+  color: white;
+}
+
+input[type="password"]{
+    font-family:"Password Mask",sans-serif;
+    font-size: 20px;
+}
+
+.link, .link a{
+    text-align: center;
+    font-size: 11px;
+    color: black;
+    margin-top: 30px;
+}
