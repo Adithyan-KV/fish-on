@@ -1,5 +1,17 @@
+:root{
+    --box-background-color:rgba(205,204,218,0.96);
+    --light-accents:rgba(210, 207, 207, 1);
+    --regular-accents:#c8c4c4;
+    --light-text-color:#9d9d9d;
+    --regular-text-color: #636060;
+    --dark-text-color:#4b4b4b;
+    --slider-bg:#be81bd;
+}
+
 .box{
     font-family: 'Audrey', sans-serif;
+    display:flex;
+    flex-direction:row;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -7,21 +19,107 @@
     width: 60%;
     height: 70%;
     padding: 50px;
-    background-color: rgba(205,204,218,0.96);
+    background-color: rgba(234, 234, 241, 0.96);
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 2px 2px 25px rgba(255, 255, 255, .2);
     z-index: 100
 }
 
-.box h1{
-  font-family: 'Roboto Slab', serif;
-  margin: 0 0 30px;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.8);
+.host-container h1{
+    font-size: 2em;
+    color:var(--dark-text-color);
 }
 
 .host-container{
+    display:flex;
+    flex-direction:column;
     height:100%;
-    width:50%;
+    width:35%;
+    /* background-color:red; */
+    border-right:1px solid var(--regular-accents);
 }
+
+.players{
+    width:60%;
+    margin-left:5%;
+    /* background-color:green; */
+}
+
+.host-dp{
+    /* padding-top=width set to maintain aspect ratio and keep it as a circle */
+    width:50%;
+    padding-top:50%;
+    /* background-color:blue; */
+    border-radius:50%;
+    background-image: url('../images/dude.jpeg');
+    background-size: contain;
+    filter:saturate(60%);
+    margin:0px auto;
+}
+
+.text-container{
+    width:80%;
+    font-size: 1.4rem;
+    margin:5% auto;
+    color:var(--light-text-color);
+}
+
+.text-container span{
+    color:var(--regular-text-color);
+    font-weight: bold;
+}
+
+.info-container{
+    padding-top:1em;
+    height: auto;
+    width:90%;
+    border:solid 1px var(--light-accents);
+}
+
+.preferences{
+    width:90%;
+    margin-top: 1em;
+    border:solid 1px var(--light-accents);
+}
+
+/* toggle in label designing */
+    .toggle {
+        position : relative ;
+        transform: translateY(0.2em);
+        margin-left: 5em;
+        display : inline-block;
+        width : 1.5em;
+        height : 1em;
+        background-color: transparent;
+        border: solid 2px var(--regular-accents);
+        border-radius: 30px;
+    }
+
+    /* After slide changes */
+    .toggle:after {
+        content: '';
+        position: absolute;
+        width: 0.8em;
+        height: 0.8em;
+        border-radius: 50%;
+        background-color: #6b3a71;
+        top: 0.1em;
+        left: 0.1em;
+        transition:  all 0.5s;
+    }
+
+    /* Checkbox cheked effect */
+    .checkbox:checked + .toggle::after {
+        left :0.6em;;
+    }
+
+    /* Checkbox cheked toggle label bg color */
+    .checkbox:checked + .toggle {
+        background-color: var(--slider-bg);
+    }
+
+    /* Checkbox vanished */
+    .checkbox {
+        display : none;
+    }
