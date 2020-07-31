@@ -1,0 +1,27 @@
+.box{
+    font-family: 'Audrey', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+    padding: 50px;
+    background-color: rgba(205,204,218,0.96);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 25px rgba(255, 255, 255, .2);
+    z-index: 100
+}
+
+.box h1{
+  font-family: 'Roboto Slab', serif;
+  margin: 0 0 30px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.host-container{
+    height:100%;
+    width:50%;
+}
