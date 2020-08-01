@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Francois+One&family=Fredoka+One&family=Saira+Extra+Condensed:wght@500&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <script src="../scripts/lobbyComponent.js"></script>
+        <meta charset="UTF-8">
     </head>
 
     <body>
@@ -59,10 +61,36 @@
                     </div>
                 </div>
             </div>
-        <div class='players'>
-
-          </div>
+            <div class='players'>
+                <player-widget></player-widget>
+                <player-widget></player-widget>
+                <player-widget></player-widget>
+                <player-widget></player-widget>
+                <player-widget></player-widget>
+                <player-widget></player-widget>
+            </div>
         </div>
+
+        <!-- the template HTML for the player widget component,
+         this is the thingy that represents each player in the lobby -->
+        <template id='player-widget'>
+            <div class='container'>
+                <!-- css styles for the elements inside the shadowDOM, will not be modified by DOMs CSS -->
+                <link rel='stylesheet' href='../styles/player-widget.css' />
+                <div class='dp-container'>
+                    <img src='../images/dude.jpeg' />
+                </div>
+                <div class="details-container">
+                    <h1>Player Name</h1>
+                    <p>
+                        Joined
+                    </p>
+                </div>
+                <div class='button-container'>
+                    <button>Remove</button>
+                </div>
+            </div>
+        </template>
 
         <div class="container">
           <ul id="scene">
